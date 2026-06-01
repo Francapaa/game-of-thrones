@@ -1,6 +1,6 @@
 # Game of Thrones — El Trono de Hierro
 
-Página web para la cursada de **Programación 4** de la carrera de Sistemas.
+Página web para la cursada de **Programación 4** .
 
 ## Descripción
 
@@ -37,13 +37,11 @@ Sitio web tributo interactivo a la serie *Game of Thrones*, desarrollado con tec
 El proyecto es completamente estático. Solo necesitas un servidor HTTP simple:
 
 ```bash
-# Con Python
-python -m http.server 8080
 
 # Con Node.js (si tenés npx)
 npx serve .
 
-# O直接用 VS Code con Live Server
+#  VS Code con Live Server
 ```
 
 Luego abrí `http://localhost:8080` en tu navegador.
@@ -63,5 +61,4 @@ Luego abrí `http://localhost:8080` en tu navegador.
 │   ├── jon-snow.webp
 │   ├── Daenerys_Targaryen_Queen.webp
 │   └── ...
-└── .agents/                # Especificaciones de diseño para asistentes IA
 ```
