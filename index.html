@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Thrones — El Trono de Hierro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body data-theme="fire">
+  <canvas id="three-canvas"></canvas>
+  <nav>
+    <button class="hamburger" aria-label="Menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="#about" class="active">La Serie</a></li>
+      <li class="dropdown">
+        <a href="#">Regiones</a>
+        <ul class="dropdown-menu">
+          <li><a href="norte.html">El Norte</a></li>
+          <li><a href="sur.html">El Sur</a></li>
+        </ul>
+      </li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="personajes.html#moment-form">Tu Momento</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Game of Thrones</h1>
+      <p class="subtitle">Cuando juegas el juego de tronos, ganas o mueres</p>
+      <p class="tagline">Una épica saga de poder, traición y fuego</p>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </a>
+  </section>
+
+  <section id="about" class="about full-screen">
+    <div class="section-header animate-scroll">
+      <h2>La Serie</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text animate-scroll">
+        <p>Game of Thrones es una serie de televisión estadounidense de fantasía medieval basada en la saga de novelas Canción de Hielo y Fuego de George R.R. Martin. La historia sigue las luchas de poder entre las grandes casas nobles de los Siete Reinos de Poniente mientras compiten por el control del codiciado Trono de Hierro.</p>
+        <p>Mientras las intrigas políticas y las guerras civiles amenazan con destruir el reino desde dentro, una amenaza aún mayor se cierne desde el norte: los Caminantes Blancos, criaturas míticas que no han sido vistas en miles de años, comienzan a despertar más allá del Muro.</p>
+        <p>La serie es conocida por sus giros argumentales impactantes, la profundidad de sus personajes, y su disposición a eliminar protagonistas principales, subvirtiendo las expectativas tradicionales del género de fantasía.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card animate-scroll delay-1">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Temporadas</span>
+        </div>
+        <div class="stat-card animate-scroll delay-2">
+          <span class="stat-number" data-target="73">0</span>
+          <span class="stat-label">Episodios</span>
+        </div>
+        <div class="stat-card animate-scroll delay-3">
+          <span class="stat-number" data-target="59">0</span>
+          <span class="stat-label">Premios Emmy</span>
+        </div>
+        <div class="stat-card animate-scroll delay-4">
+          <span class="stat-number" data-target="2011">0</span>
+          <span class="stat-label">Año de Estreno</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quotes" class="quotes">
+    <div class="section-header animate-scroll">
+      <h2>Frases Memorables</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="quotes-container">
+      <div class="quote-card animate-scroll delay-1">
+        <p class="quote-text">"Cuando juegas al juego de tronos, ganas o mueres. No existe término medio."</p>
+        <span class="quote-author">— Cersei Lannister</span>
+      </div>
+      <div class="quote-card animate-scroll delay-2">
+        <p class="quote-text">"Un Lannister siempre paga sus deudas."</p>
+        <span class="quote-author">— Lema no oficial de la Casa Lannister</span>
+      </div>
+      <div class="quote-card animate-scroll delay-3">
+        <p class="quote-text">"Valar Morghulis. Todos los hombres deben morir."</p>
+        <span class="quote-author">— Proverbio Valyrio</span>
+      </div>
+      <div class="quote-card animate-scroll delay-4">
+        <p class="quote-text">"La noche es oscura y alberga horrores."</p>
+        <span class="quote-author">— Melisandre</span>
+      </div>
+      <div class="quote-card animate-scroll delay-5">
+        <p class="quote-text">"No sé nada, Jon Snow."</p>
+        <span class="quote-author">— Ygritte</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-logo">Game of Thrones</p>
+      <div class="footer-divider"></div>
+      <p class="footer-text">Una producción de HBO basada en la saga de novelas Canción de Hielo y Fuego de George R.R. Martin. Esta página es un tributo a la serie y no tiene fines comerciales.</p>
+      <p class="footer-copyright">Valar Morghulis — Valar Dohaeris</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="three-background.js"></script>
+</body>
+</html>

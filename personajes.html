@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes — Game of Thrones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body data-theme="violet">
+  <canvas id="three-canvas"></canvas>
+  <nav>
+    <button class="hamburger" aria-label="Menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="index.html#about">La Serie</a></li>
+      <li class="dropdown">
+        <a href="#">Regiones</a>
+        <ul class="dropdown-menu">
+          <li><a href="norte.html">El Norte</a></li>
+          <li><a href="sur.html">El Sur</a></li>
+        </ul>
+      </li>
+      <li><a href="#characters" class="active">Personajes</a></li>
+      <li><a href="#moment-form">Tu Momento</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-compact">
+    <div class="hero-content">
+      <h1>Personajes</h1>
+      <p class="subtitle">Los protagonistas de la saga</p>
+    </div>
+    <a href="#characters" class="scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </a>
+  </section>
+
+  <section id="characters" class="characters full-screen">
+    <div class="section-header animate-scroll">
+      <h2>Personajes Principales</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="characters-grid">
+      <div class="character-card animate-scroll delay-1" data-house="stark">
+        <div class="character-visual">
+          <img src="public/jon-snow.webp" alt="Jon Snow" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Jon Snow</h3>
+          <p class="character-title">El Rey en el Norte, Lord Comandante</p>
+          <p class="character-desc">Hijo bastardo de Ned Stark, criado en Winterfell junto a sus medio hermanos. Se une a la Guardia de la Noche donde asciende hasta convertirse en Lord Comandante. Su destino está entrelazado con la amenaza de los Caminantes Blancos.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Stark
+          </span>
+        </div>
+      </div>
+
+      <div class="character-card animate-scroll delay-2" data-house="targaryen">
+        <div class="character-visual">
+          <img src="public/Daenerys_Targaryen_Queen.webp" alt="Daenerys Targaryen" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Daenerys Targaryen</h3>
+          <p class="character-title">Madre de Dragones, Khaleesi</p>
+          <p class="character-desc">Última heredera de la Casa Targaryen, exiliada desde niña. Renace de las llamas con tres dragones y construye un ejército para reclamar el Trono de Hierro. Es conocida como la Rompedora de Cadenas por liberar esclavos.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Targaryen
+          </span>
+        </div>
+      </div>
+
+      <div class="character-card animate-scroll delay-3" data-house="lannister">
+        <div class="character-visual">
+          <img src="public/Tyrion_Lannister-Peter_Dinklage.jpg" alt="Tyrion Lannister" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Tyrion Lannister</h3>
+          <p class="character-title">El Gnomo, Mano de la Reina</p>
+          <p class="character-desc">El hijo menor de Tywin Lannister, despreciado por su familia debido a su enanismo. Compensa su estatura con su ingenio y astucia política. Es uno de los personajes más inteligentes y mordaces de la serie.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Lannister
+          </span>
+        </div>
+      </div>
+
+      <div class="character-card animate-scroll delay-4" data-house="lannister">
+        <div class="character-visual">
+          <img src="public/Cersei_Lannister_HBO.JPG.webp" alt="Cersei Lannister" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Cersei Lannister</h3>
+          <p class="character-title">Reina de los Siete Reinos</p>
+          <p class="character-desc">Reina consorte y luego Reina reinante, Cersei es ambiciosa, despiadada y protectora de sus hijos. Su relación incestuosa con su hermano Jaime es uno de los secretos más oscuros del reino.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Lannister
+          </span>
+        </div>
+      </div>
+
+      <div class="character-card animate-scroll delay-1" data-house="stark">
+        <div class="character-visual">
+          <img src="public/Arya_Stark_HBO_Season_8.PNG.webp" alt="Arya Stark" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Arya Stark</h3>
+          <p class="character-title">Nadie, La Niña Lobo</p>
+          <p class="character-desc">La hija menor de Ned Stark, rebelde y aventurera. Tras presenciar la ejecución de su padre, emprende un viaje que la transforma de niña noble a asesina entrenada. Mantiene una lista de personas que debe matar.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Stark
+          </span>
+        </div>
+      </div>
+
+      <div class="character-card animate-scroll delay-2" data-house="stark">
+        <div class="character-visual">
+          <img src="public/QueenSansa.PNG.webp" alt="Sansa Stark" loading="lazy">
+        </div>
+        <div class="character-info">
+          <h3>Sansa Stark</h3>
+          <p class="character-title">Dama de Winterfell, Reina en el Norte</p>
+          <p class="character-desc">La hija mayor de los Stark, inicialmente ingenua y romántica. Los horrores que sufre en Desembarco del Rey la transforman en una mujer astuta y resistente, capaz de jugar el juego de tronos.</p>
+          <span class="character-house-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Casa Stark
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="moment-form" class="moment-form full-screen">
+    <div class="section-header animate-scroll">
+      <h2>Tu Mejor Momento</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="moment-form-container animate-scroll delay-2">
+      <p class="form-intro">¿Cuál fue tu momento favorito de la serie? Compártelo con nosotros.</p>
+      <form id="bestMomentForm">
+        <div class="form-group">
+          <label for="characterName">Tu nombre</label>
+          <input type="text" id="characterName" name="characterName" placeholder="Ej: Juan Pérez" required>
+        </div>
+        <div class="form-group">
+          <label for="season">Temporada favorita</label>
+          <input type="text" id="season" name="season" placeholder="Ej: Temporada 6" required>
+        </div>
+        <div class="form-group">
+          <label for="episode">Episodio favorito</label>
+          <input type="text" id="episode" name="episode" placeholder="Ej: Batalla de los Bastardos" required>
+        </div>
+        <div class="form-group">
+          <label for="moment">Describe tu momento favorito</label>
+          <textarea id="moment" name="moment" placeholder="Cuéntanos por qué este momento es tu favorito..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Compartir Momento</button>
+        <p class="form-feedback" id="formFeedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-logo">Game of Thrones</p>
+      <div class="footer-divider"></div>
+      <p class="footer-text">Una producción de HBO basada en la saga de novelas Canción de Hielo y Fuego de George R.R. Martin. Esta página es un tributo a la serie y no tiene fines comerciales.</p>
+      <p class="footer-copyright">Valar Morghulis — Valar Dohaeris</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="three-background.js"></script>
+</body>
+</html>
